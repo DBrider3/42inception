@@ -21,7 +21,7 @@ COPY	./conf/www.conf /etc/php/7.3/fpm/pool.d/www.conf
 
 RUN 	mkdir -p /run/php/
 
-CMD     ["php-fpm7.3", "-F"]
+ENTRYPOINT     ["php-fpm7.3", "-F"]
 
 EXPOSE 9000
 

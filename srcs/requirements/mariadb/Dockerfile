@@ -7,6 +7,6 @@ COPY	tools/mariadb_setting.sh /mariadb_setting.sh
 COPY	./conf/my.cnf /etc/mysql/my.cnf
 COPY    ./conf/wp_backup.sql ./
 
-CMD    ["sh", "./mariadb_setting.sh"]
+ENTRYPOINT    ["sh", "./mariadb_setting.sh"]
 
 EXPOSE 3306
